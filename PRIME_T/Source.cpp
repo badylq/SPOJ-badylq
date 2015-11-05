@@ -1,7 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
 #include <cstdio>
-#include <cmath>
 
 using namespace std;
 
@@ -38,5 +36,4 @@ int main()
 			printf("NIE\n");
 		}
 	}
-	cin.get();
 }

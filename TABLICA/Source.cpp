@@ -6,12 +6,8 @@ using namespace std;
 
 int main()
 {
-	int tab[1000];
+	int tab[100];
 	int m = 0, a;
-	char c;
-
-	std::string segment;
-
 	while (cin >> a)
 	{
 		tab[m] = a;
@@ -21,5 +17,4 @@ int main()
 	{
 		printf("%d\n", tab[i]);
 	}
-	cin.get();
 }
