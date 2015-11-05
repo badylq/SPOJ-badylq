@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <cstdio>
 #include <cmath>
 
@@ -7,28 +8,35 @@ using namespace std;
 int main()
 {
 	int c, n;
-	scanf("%d", &c);
-	for (int i = 0; i < c; i++)
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &n);
-		bool ans = true;
-		if (n ==1)
+		int prime = 0;
+		scanf("%d", &c);
+		if (c != 1)
 		{
-			printf("NIE\n");
-		}
-		else
-		{
-			for (int ii = 2; ii < sqrt(n); ii++)
+			for (int j = 1; j <= c; j++)
 			{
-				if (n % ii == 0)
+				if (c%j == 0)
 				{
-					ans = false;
-					printf("NIE\n");
+					++prime;
 					continue;
 				}
 			}
-			if (ans)
+
+			if (prime > 2)
+			{
+				printf("NIE\n");
+			}
+			else
+			{
 				printf("TAK\n");
+			}
+		}
+		else
+		{
+			printf("NIE\n");
 		}
 	}
+	cin.get();
 }
