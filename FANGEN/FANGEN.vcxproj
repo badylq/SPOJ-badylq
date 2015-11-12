@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2628479C-98A3-4ED2-8D67-703BF5821D30}</ProjectGuid>
-    <RootNamespace>FANGENcpp</RootNamespace>
+    <RootNamespace>FANGEN</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
