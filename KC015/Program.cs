@@ -31,6 +31,8 @@ namespace KC015
 					return true;
 				if (bigBigger && dzialanie != 0)
 					return true;
+				if (!smallBigger && !bigBigger && dzialanie != 1)
+					return true;
 			}
 			else
 			{
